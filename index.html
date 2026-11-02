@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prajwal B L | Web Developer Portfolio</title>
+<meta name="description" content="Portfolio of Prajwal B L, BCA student at STG First Grade College, Mandya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#home" class="logo">prajwal<span>.</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="menu">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    <a href="#education">Education</a><a href="#contact" class="pill">Contact</a>
+    <button id="themeBtn" class="theme" aria-label="Switch theme">◐</button>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Prajwal <span class="sticker">B L</span></h1>
+    <p class="role">I'm a <span id="typed"></span><span class="caret">|</span></p>
+    <p class="tagline">I design and build simple, useful websites.</p>
+    <p class="lead">I'm Prajwal B L, a BCA student who enjoys web development, Python and databases, and learns best by building real projects.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="#contact">Say hello</a>
+    </div>
+    <p class="stats"><b>3</b> projects | <b>7</b> skills | BCA 2027</p>
+  </div>
+  <div class="photo"><img src="images/profile.jpg" alt="Portrait of Prajwal B L"></div>
+</section>
+
+<section id="about" class="reveal">
+  <h2>About me</h2>
+  <div class="two">
+    <div>
+      <p>I am a Bachelor of Computer Applications student at STG First Grade College, Chinakurali, Mandya. I like turning small ideas into working web pages and apps.</p>
+      <p>I am looking for entry-level roles and internships where I can apply what I know, learn from experienced developers and keep growing.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>Course</dt><dd>Bachelor of Computer Applications</dd></div>
+      <div><dt>Years</dt><dd>2024 to 2027</dd></div>
+      <div><dt>College</dt><dd>STG First Grade College</dd></div>
+      <div><dt>Focus</dt><dd>Web development</dd></div>
+      <div><dt>Databases</dt><dd>SQL</dd></div>
+      <div><dt>Based in</dt><dd>Mandya, Karnataka</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <p class="muted">Filled dots show my comfort level, out of five.</p>
+  <div class="skills" id="skillList"></div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Featured projects</h2>
+  <div class="filters" id="filters">
+    <button class="chip active" data-f="all">All</button>
+    <button class="chip" data-f="Website">Website</button>
+    <button class="chip" data-f="Web app">Web app</button>
+    <button class="chip" data-f="Utility">Utility</button>
+  </div>
+  <div class="projects" id="projectList"></div>
+</section>
+
+<section id="education" class="reveal">
+  <h2>Education</h2>
+  <div class="timeline">
+    <p class="muted">2024 to 2027</p>
+    <h3>Bachelor of Computer Applications</h3>
+    <p>STG First Grade College, Chinakurali, Mandya</p>
+    <span class="tag">Currently pursuing</span>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="two">
+    <div>
+      <h2>Contact</h2>
+      <p>Have an internship, project or job in mind? Send a message and I'll reply.</p>
+      <p><a class="link" href="mailto:prajwal@gmail.com">prajwal@gmail.com</a></p>
+      <p><a class="link" href="https://github.com/PCRcreation" target="_blank" rel="noopener">GitHub</a></p>
+      <p><a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+    <form id="form" class="form" novalidate>
+      <label>Name<input id="name" placeholder="Your name" required></label>
+      <label>Email<input id="email" type="email" placeholder="you@example.com" required></label>
+      <label>Message<textarea id="msg" rows="4" placeholder="How can I help?" required></textarea></label>
+      <button class="btn primary" type="submit">Send message</button>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Prajwal B L. Built with HTML, CSS and JavaScript.</footer>
+<button id="toTop" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
